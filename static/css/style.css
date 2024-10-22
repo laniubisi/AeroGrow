@@ -14,18 +14,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-header {
-    grid-column: 1 / -1;
-    background-color: #f0f0f0;
-    padding: 10px 20px;
-}
-
-h1 {
-    margin: 0;
-    font-size: 18px;
-    color: #666;
 }
 
 nav {
@@ -53,7 +42,12 @@ nav ul li {
     cursor: pointer;
 }
 
-nav ul li.active {
+nav ul li a {
+    color: #4a4a4a;  /* Dark grey color */
+    text-decoration: none;
+}
+
+nav ul li.active a {
     font-weight: bold;
     border-bottom: 2px solid #000;
 }
@@ -86,7 +80,12 @@ aside ul li {
     cursor: pointer;
 }
 
-aside ul li.active {
+aside ul li a {
+    color: #4a4a4a;  /* Dark grey color */
+    text-decoration: none;
+}
+
+aside ul li.active a {
     font-weight: bold;
 }
 
