@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    grid-column: 1 / -1;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+}
+
+nav {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.continue-btn {
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside {
+    grid-row: 2 / 4;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+aside ul li.active {
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learning-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.learning-item h3 {
+    margin: 0 0 10px 0;
+}
+
+.learning-item p {
+    margin: 0;
+    color: #666;
+}
+
+.community-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.community-btn {
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    grid-column: 2 / -1;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile a {
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+}
